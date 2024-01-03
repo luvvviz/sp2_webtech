@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Task Manager with Google Calendar API</title>
@@ -18,14 +18,14 @@
   </header>
 
   <main>
-    <section class="auth_buttons">
+    <div class="auth_buttons">
       <button id="authorize_button"><i class="fab fa-google"></i>Authorize</button>
       <button id="signout_button"><i class="fas fa-sign-out-alt"></i>Sign Out</button>
-    </section>
-    <section class="message">
+    </div>
+    <div class="message">
       <div id="message_div"></div>
-    </section>
-    <section id="event_controls">
+    </div>
+    <div id="event_controls">
       <div id="error_message"></div>
       <form id="event_form">
         <input type="hidden" id="event_id">
@@ -45,13 +45,13 @@
         <input type="text" id="event_description" placeholder="Add Event Description">
         <button type="button" id="add_event_button"><i class="fas fa-plus"></i>Add Event</button>
       </form>
-    </section>
-    <section class="events">
-      <section id="events_list">
+    </div>
+    <div class="events">
+      <div id="events_list">
         <h2>Upcoming Events</h2>
         <ul id="upcoming_events_content"></ul>
-      </section>
-      <section id="past_events">
+      </div>
+      <div id="past_events">
         <h2>Past Events</h2>
         <div class="past-events-buttons">
           <button id="day_events">Past Day</button>
@@ -59,8 +59,8 @@
           <button id="month_events">Past Month</button>
         </div>
         <ul id="past_events_content"></ul>
-      </section>
-    </section>
+      </div>
+    </div>
   </main>
 
   <footer>

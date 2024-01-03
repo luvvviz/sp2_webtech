@@ -581,7 +581,7 @@ async function syncEventsWithServer() {
     }
   };
 
-  request.onerror = function() {
+  request.onerror = function () {
     console.error("Error fetching events from IndexedDB:", request.error);
   };
 }
